@@ -55,15 +55,15 @@ body {
 .f34 { flex: 1; }
 .f67 { flex: 1; }
 .f89 { flex: 1; min-width: 150px; }
-.f1 { flex: 2; background-image: url('../MatveyCortishe/images/Bob.png');}
-.f2 { flex: 1; background-image: url('../MatveyCortishe/images/Bob.png');}
-.f3 { flex: 1; background-image: url('../MatveyCortishe/images/Bob.png'); }
-.f4 { flex: 1; background-image: url('../MatveyCortishe/images/wtf.png');}
-.f5 { flex: 2; background-image: url('../MatveyCortishe/images/car.jpg');}
-.f6 { flex: 1; background-image: url('../MatveyCortishe/images/No.png');}
-.f7 { flex: 1; background-image: url('../MatveyCortishe/images/Bob.png');}
-.f8 { flex: 1; background-image: url('../MatveyCortishe/images/Bob.png'); }
-.f9 { flex: 1; background-image: url('../MatveyCortishe/images/warning.jpg');background-size: 80%;}
+.f1 { flex: 2; background-image: url('images/Bob.png');}
+.f2 { flex: 1; background-image: url('images/Bob.png');}
+.f3 { flex: 1; background-image: url('images/Bob.png'); }
+.f4 { flex: 1; background-image: url('images/wtf.png');}
+.f5 { flex: 2; background-image: url('images/car.jpg');}
+.f6 { flex: 1; background-image: url('images/No.png');}
+.f7 { flex: 1; background-image: url('images/Bob.png');}
+.f8 { flex: 1; background-image: url('images/Bob.png'); }
+.f9 { flex: 1; background-image: url('images/warning.jpg');background-size: 80%;}
 
 .f8 p { 
   padding: 20px; 
