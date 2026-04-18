@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  padding: 10px;
+  height: 100vh;
+}
+
+.frame {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  height: 100%;
+  flex-wrap: wrap;
+}
+
+.f1234567, .f12345, .f12, .f345, .f34, .f67, .f89 {
+  display: flex;
+  gap: 10px;
+}
+
+
+:is(.frame, .f12345, .f34, .f67) {
+  flex-direction: row;
+}
+
+:is(.f1234567, .f12, .f345, .f89) {
+  flex-direction: column;
+}
+
+:is(.f1, .f2, .f3, .f4, .f5, .f6, .f7, .f8, .f9) {
+  border-radius: 24px;
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+}
+
+:is(.f1, .f2, .f3, .f4, .f5, .f6, .f7, .f8, .f9) {
+  min-height: 150px;
+}
+
+:is(.f1,.f2, .f3, .f4, .f5, .f6, .f7, .f8, .f9) {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+.f1234567 { flex: 2; min-width: 200px; }
+.f12345 { flex: 2; }
+.f12 { flex: 1; } 
+.f345 { flex: 1; }
+.f34 { flex: 1; }
+.f67 { flex: 1; }
+.f89 { flex: 1; min-width: 150px; }
+.f1 { flex: 2; background-image: url('../MatveyCortishe/images/Bob.png');}
+.f2 { flex: 1; background-image: url('../MatveyCortishe/images/Bob.png');}
+.f3 { flex: 1; background-image: url('../MatveyCortishe/images/Bob.png'); }
+.f4 { flex: 1; background-image: url('../MatveyCortishe/images/wtf.png');}
+.f5 { flex: 2; background-image: url('../MatveyCortishe/images/car.jpg');}
+.f6 { flex: 1; background-image: url('../MatveyCortishe/images/No.png');}
+.f7 { flex: 1; background-image: url('../MatveyCortishe/images/Bob.png');}
+.f8 { flex: 1; background-image: url('../MatveyCortishe/images/Bob.png'); }
+.f9 { flex: 1; background-image: url('../MatveyCortishe/images/warning.jpg');background-size: 80%;}
+
+.f8 p { 
+  padding: 20px; 
+  font-size: 60px; 
+}
+.f9 p { 
+  font-size: 60px; 
+  color: rgb(224, 2, 2); 
+  padding: 190px; 
+}
+
+@media (max-width: 1200px) {
+  .frame {
+    flex-direction: column;
+  }
+  :is(.f1234567, .f89) {
+    width: 100%;
+    flex: auto;
+  }
+}
